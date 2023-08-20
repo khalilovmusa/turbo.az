@@ -1,6 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 .header {
   display: flex;
   flex-direction: column;
+
 }
 
 .first-header-wrapper {
@@ -8,7 +16,7 @@
   width: 1257.33px;
   padding: 0px 123.66px 0px 123.67px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: #F6F7FA;
   justify-content: space-between;
 }
@@ -52,6 +60,7 @@
   flex-direction: row;
   width: 502.84px;
   height: 22px;
+  align-items: center;
 }
 
 .number-text:hover {
@@ -95,12 +104,12 @@
 }
 
 .icon-sign-in {
-  display: inline-flex;
+  display: flex;
   padding-left: 0px;
   align-items: center;
   margin-left: 22px;
   gap: 7px;
-
+  justify-content: center;
 }
 
 .help-text {
@@ -433,13 +442,13 @@ input::placeholder {
 
 .all-button:active,
 .new-button:active,
-.used-button:active{
+.used-button:active {
   border-radius: 7px 0px 0px 7px;
   border-top: 0.667px solid #CA1016;
   border-bottom: 0.667px solid #CA1016;
   border-left: 0.667px solid #CA1016;
   background: #CA1016;
-} 
+}
 
 .all-button {
   width: 67px;
@@ -460,7 +469,7 @@ input::placeholder {
   margin-left: -5px;
 }
 
-.input-section-container{
+.input-section-container {
   display: flex;
   flex-direction: row;
   width: 1257.33px;
@@ -470,31 +479,31 @@ input::placeholder {
   flex-direction: row;
 }
 
-.textbox-areas{
+.textbox-areas {
   display: flex;
   flex-direction: row;
 
 }
 
 .min-price-textbox input,
-.max-price-textbox input{
+.max-price-textbox input {
   width: 117px;
 
 
 }
 
-.min-price-textbox{
+.min-price-textbox {
   position: relative;
 
 }
 
-.max-price-textbox{
+.max-price-textbox {
   position: relative;
 
 }
 
 .min-price-label,
-.max-price-label{
+.max-price-label {
   position: absolute;
   top: 10px;
   left: 3px;
@@ -507,16 +516,16 @@ input::placeholder {
   transition: 0.3s;
   pointer-events: none;
 
-  
-}
-
-.min-price-textbox input{
- border-top-right-radius: 0px;
- border-bottom-right-radius: 0px;
 
 }
 
-.max-price-textbox input{
+.min-price-textbox input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+
+.max-price-textbox input {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   margin-left: -1px;
@@ -524,7 +533,7 @@ input::placeholder {
 }
 
 .min-price-textbox input:focus+.min-price-label,
-.max-price-textbox input:focus+.max-price-label{
+.max-price-textbox input:focus+.max-price-label {
   position: absolute;
   top: 2px;
   left: 7px;
@@ -533,12 +542,12 @@ input::placeholder {
 }
 
 
-.money-selection-div{
+.money-selection-div {
   display: flex;
-  
+
 }
 
-.money-type-selection-container{
+.money-type-selection-container {
   display: flex;
   flex-direction: row;
   margin-left: 10px;
@@ -546,37 +555,461 @@ input::placeholder {
 
 }
 
-.checkbox-1-div{
+.checkbox-1-div {
   margin-left: 5px;
   height: 46.33px;
 
 }
 
-.checkbox-2-div{
+.checkbox-2-div {
   margin-left: 5px;
 
 }
 
-.ban-model-container{
+.ban-model-container {
   display: flex;
   flex-direction: row;
   margin-left: 15px;
 
 }
 
-.ban-model-container .input-brand-container input{
+.ban-model-container .input-brand-container input {
   width: 222px;
 
 }
 
-.ban-model-container .input-brand-container .svg-container svg{
+.ban-model-container .input-brand-container .svg-container svg {
   position: absolute;
   left: -11px;
   top: 10px;
 
 }
-.year-and-max{
+
+.year-and-max {
   display: flex;
   flex-direction: row;
-  
 }
+
+.min-year-container select {
+  height: 46.33px;
+  width: 117px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+
+.max-year-container select {
+  height: 46.33px;
+  width: 117px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+
+}
+
+.main-search-footer {
+  background-color: #EBEDF3;
+  width: 1257px;
+  padding-bottom: 20px;
+}
+
+.main-search-footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1086px;
+  align-items: center;
+  gap: 408.08px;
+
+
+}
+
+.main-search-left-footer {
+  margin-left: 123.67px;
+  display: flex;
+}
+
+.main-search-right-footer {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.reset-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-search-left-footer a {
+  text-decoration: none;
+
+}
+
+.reset-container a {
+  text-decoration: none;
+  color: #8D94AD;
+  text-align: center;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 120% */
+  margin-right: 20px;
+
+}
+
+.filter-text-container a {
+  text-decoration: none;
+  color: #CA1016;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 120% */
+  margin-right: 10px;
+
+}
+
+.filter-svg-container {
+  margin-right: 20px;
+}
+
+.show-the-announcements-button-container {}
+
+.announcements-button-itself {
+  border-radius: 7px;
+  background: #CA1016;
+  border: none;
+  color: #fff;
+  padding: 14px 40px;
+}
+
+.products-container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  width: 1257.33px;
+  height: 60px;
+  padding: 20.67px 1006.66px 21.33px 143.67px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-top: 0.667px solid #EAEBF2;
+  border-bottom: 0.667px solid #EAEBF2;
+  background: #F1F3F7;
+}
+
+.product-header-text-container {
+  color: #212C3A;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+}
+
+.product-container {
+  cursor: pointer;
+
+}
+
+.car-price-text {
+  color: #212C3A;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  /* 94.444% */
+}
+
+.car-name-text {
+  color: #212C3A;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  /* 106.25% */
+}
+
+.car-details-text {
+  color: #212C3A;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  /* 106.25% */
+}
+
+.announcement-time-text {
+  color: #8D94AD;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  /* 121.429% */
+}
+
+.card-div p {
+  margin: 0px;
+
+}
+
+.products-section-container {
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px;
+  background: #F6F7FA;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 20px;
+
+}
+
+.product-card {
+  width: 229px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFF;
+  border: none;
+  border-radius: 7px;
+
+}
+
+.product-card img {
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+
+}
+
+.product-card:hover {
+  box-shadow: 0px 8px 17px 0px rgba(44, 39, 56, 0.02), 0px 17px 34px 0px rgba(44, 39, 56, 0.04);
+
+}
+
+
+.footer-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  padding: 15px 19.99px 13.995px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 540.42px;
+  flex: 1 0 0;
+  border-top: 0.667px solid #EAEBF2;
+  background: #F1F3F7;
+
+}
+
+.header-right-section {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ad-marketing-text a {
+  display: flex;
+  padding: 0px 20.38px 1.33px 0px;
+  align-items: flex-start;
+  color: #212C3A;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+
+}
+
+.facebook-svg-container {
+  display: flex;
+  padding: 5px 5px 5px 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: -5px;
+
+}
+
+.facebook-svg-container svg,
+.instagram-svg-container svg,
+.turbo-az-mail-container,
+.turbo-az-number-container {
+  cursor: pointer;
+}
+
+.turbo-az-mail-container:hover .mail-itself-text,
+.turbo-az-number-container:hover .telephone-number-itself {
+  color: #b11e1e;
+  transition: 0.3s;
+
+
+}
+
+.instagram-svg-container {
+  display: flex;
+  padding: 5px 5px 5px 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -3px;
+
+}
+
+.turbo-az-mail-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+  align-items: flex-start;
+  align-items: center;
+  padding-right: 17.63px;
+
+}
+
+.mail-itself-text {
+  color: #212C3A;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 7px;
+
+}
+
+.mail-svg-container {
+  margin-top: -2px;
+  margin-left: 8px;
+
+}
+
+.mail-photo-top {
+  margin-bottom: -20px;
+
+}
+
+.mail-photo-bottom {
+  margin-top: 0px;
+
+}
+
+.turbo-az-number-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.telephone-svg-container {
+  margin-top: -2px;
+
+}
+
+.telephone-number-itself {
+  color: #212C3A;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 7px;
+
+}
+
+.footer-main-container-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: -130px;
+  position: relative;
+
+}
+
+.brand-name a:hover {
+  color: #b11e1e;
+  transition: 0.7s;
+
+}
+
+.brand-name a {
+  text-decoration: none;
+  color: #8D94AD;
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 35px;
+
+}
+
+.footer-main-col-7 {
+  margin-bottom: 288px;
+
+}
+
+.footer-photo-container {
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+
+}
+
+.footer-of-the-footer {
+  display: flex;
+  width: 1257.33px;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 0.667px solid #EAEBF2;
+  background: #F1F3F7;
+}
+
+.left-section-footer {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  width: 1010px;
+  padding: 22.33px 566.54px 22.34px 20px;
+  align-items: center;
+  margin-left: 80px;
+
+}
+
+.rules-text a,
+.law-text a,
+.user-agreement-text a,
+.privacy-policy-text a {
+  text-decoration: none;
+  color: #212C3A;
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 30px;
+
+}
+
+.rules-text a:hover,
+.law-text a:hover,
+.user-agreement-text a:hover,
+.privacy-policy-text a:hover{
+  transition: 1s;
+  color: #b11e1e;
+  
+} 
