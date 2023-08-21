@@ -722,7 +722,33 @@ input::placeholder {
 
 .product-container {
   cursor: pointer;
+  position: relative;
+}
 
+.product-card {
+  position: relative;
+
+}
+
+.salon-label-container {
+  position: absolute;
+  top: 55%;
+  left: 1%;
+  display: inline-flex;
+  padding: 3px 9.14px 3px 5px;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: #4264FD;
+}
+
+.salon-label-text-container {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  /* 118.182% */
 }
 
 .car-price-text {
@@ -788,7 +814,7 @@ input::placeholder {
   background: #FFF;
   border: none;
   border-radius: 7px;
-
+  position: relative;
 }
 
 .product-card img {
@@ -1008,8 +1034,63 @@ input::placeholder {
 .rules-text a:hover,
 .law-text a:hover,
 .user-agreement-text a:hover,
-.privacy-policy-text a:hover{
+.privacy-policy-text a:hover {
   transition: 1s;
   color: #b11e1e;
-  
-} 
+
+}
+
+.bottom-part-container {
+  display: flex;
+  flex-direction: row;
+  background: #CA1016;
+  display: flex;
+  width: 1257.33px;
+  height: 60px;
+  padding: 0px 123.66px 0px 123.67px;
+  justify-content: center;
+
+}
+
+.bottom-part-wrapper {
+  width: 1010px;
+  height: 60px;
+  padding: 14.67px 20px 14.66px 20px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-left: -87px;
+
+}
+
+.bottom-text-1 {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  padding: 0px 97px 0.67px 0px;
+  align-items: flex-start;
+}
+
+.bottom-part-right-section {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 25px
+}
+
+.digital-classfield-container a,
+.mobile-application-container a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
